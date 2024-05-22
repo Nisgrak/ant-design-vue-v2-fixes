@@ -32,7 +32,7 @@ var confirm = function confirm(config) {
 		currentConfig = _extends(_extends({}, currentConfig), newConfig);
 
 		if (confirmDialogInstance) {
-			vueRender(cloneVNode(confirmDialogInstance.component.props, { ...currentConfig }, div))
+			vueRender(cloneVNode(confirmDialogInstance.component.props, { ...currentConfig }), div)
 
 		}
 	}
